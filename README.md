@@ -155,15 +155,15 @@ std::vector<std::string> splitString(const std::string& vInput, char vSeperator)
 
 7. **配置测试项目的包含目录**。（此处可能有冗余操作）
 
-![配置Google Test库目录1](./ReadmeImgs/配置Google Test库目录1.jpg)
+![配置GoogleTest库目录1](./ReadmeImgs/配置GoogleTest库目录1.jpg)
 
-![配置Google Test库目录2](ReadmeImgs\配置Google Test库目录2.jpg)
+![配置GoogleTest库目录2](./ReadmeImgs/配置GoogleTest库目录2.jpg)
 
 配置C++附加包含目录时，记得用相对路径，分别添加`../MyStringSplit2`,`../packages`,`../packages/Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.1.8.1.7/build/native/include`,注意，初始建立项目时并没有将解决方案添加到项目中，所以这里相对引用时`../`，添加后两个，纯粹时因为git clone文件时，test.cpp和pch.h中有`#include <gtest/gtest.h>`的波浪线。
 
-![配置Google Test库目录3](ReadmeImgs/配置Google Test库目录3.jpg)
+![配置GoogleTest库目录3](./ReadmeImgs/配置GoogleTest库目录3.jpg)
 
-![配置Google Test库目录4](./ReadmeImgs/配置Google Test库目录4.jpg)
+![配置GoogleTest库目录4](./ReadmeImgs/配置GoogleTest库目录4.jpg)
 
 如果用的生成方案是x86,那么链接器常规中附加库目录是`../Debug`即可。
 
