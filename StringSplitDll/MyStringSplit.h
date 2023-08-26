@@ -1,12 +1,11 @@
 #pragma once
-#define BUILD_MYSTRINGDLL
 #include <vector>
 #include <string>
 
-#ifdef BUILD_MYSTRINGDLL
+#ifdef BUILD_MYSTRINSPLITGDLL
 #define API_SYMBOL __declspec(dllexport)
 #else
 #define API_SYMBOL __declspec(dllimport)
-#endif // BUILD_MYSTRINGDLL
+#endif // BUILD_MYSTRINGSPLITDLL
 
 extern "C++" API_SYMBOL std::vector<std::string> splitString(const std::string & vInput, char vSeperator);

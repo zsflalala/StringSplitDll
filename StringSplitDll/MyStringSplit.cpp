@@ -3,11 +3,10 @@
 
 std::vector<std::string> splitString(const std::string& vInput, char vSeperator)
 {
-	std::vector<std::string> result;
 	int subIndex = 0;
+	std::vector<std::string> result;
 	std::string cutString, lastString;
-	for (int i = 0; i < vInput.size(); i++)
-	{
+	for (int i = 0; i < vInput.size(); i++){
 		if (vInput[i] == vSeperator) {
 			cutString = vInput.substr(subIndex, i - subIndex);
 			if (cutString != "") {
