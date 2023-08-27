@@ -7,14 +7,10 @@
 >3. 学会标准模板库 STL 中 `std::string` 和 `std::vector` 的基本用法
 >4. 动态链接库的编写
 
-
-
 #### 开发环境
 
 * Visual Studio 2022
 * Google Test
-
-
 
 #### 具体内容
 
@@ -30,8 +26,6 @@ std::vector<std::string> splitString(const std::string& vInput, char vSeperator)
 >
 >1. 假设字符串中不出现中文字符
 >2. 使用 Nuget 来安装 Google Test
-
-
 
 #### 提交材料
 
